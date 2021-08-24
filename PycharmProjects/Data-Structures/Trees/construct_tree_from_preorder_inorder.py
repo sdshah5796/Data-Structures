@@ -10,8 +10,8 @@ def build_tree(inorder, preorder):
         return None
     root = Node(preorder[0])
     mid = inorder.index(preorder[0])
-    root.left = build_tree(preorder[1:mid + 1], inorder[:mid])
-    root.right = build_tree(preorder[mid + 1:], inorder[mid + 1:])
+    root.left = build_tree(inorder[:mid], preorder[1:mid + 1])
+    root.right = build_tree(inorder[mid + 1:], preorder[mid + 1:])
     return root
 
 
