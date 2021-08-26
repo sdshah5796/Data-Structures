@@ -1,4 +1,4 @@
-# Cracking the coding interview: 1.1
+# Cracking the coding interview: 1.2
 
 # Can be done through sorting and comparing the strings
 

@@ -3,3 +3,6 @@ def rotateString(s, goal):
         updated_string = s + s
 
         return goal in updated_string
+
+
+# Run time depends on the substring method

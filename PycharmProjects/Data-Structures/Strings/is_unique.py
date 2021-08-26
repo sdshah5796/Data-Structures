@@ -42,3 +42,18 @@ def is_unique_bit_manipulation(str):
 st = "ABCA"
 print(is_unique(st))
 print(is_unique_bit_manipulation(st))
+
+'''
+Notes:
+Ask the interviewer if it's a unicode string or an ASCII string
+Time complexity: O(c) or o(n) where c is the size of the character set
+Space complexity: O(c)
+
+If we can't use additional data structures, we can do the following:
+1. Compare every character of the string to every other character of the string. This will take 0( n^2) time
+and 0(1) space.
+
+2. If we are allowed to modify the input string, we could sort the string in O(nlog(n)) time and then
+linearly check the string for neighboring characters that are identical. Careful, though: many sorting
+algorithms take up extra space.
+'''

@@ -15,7 +15,7 @@ def compress(chars):
                 strint = str(count)
                 j = i + 1
                 for z in strint:
-                    chars.insert(j, z)
+                    chars.insert(j,z)
                     j += 1
                 count = 1
 
