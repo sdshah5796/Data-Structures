@@ -19,3 +19,5 @@ print(isSubstring(s1, s2))
 # M = 3
 # N = 13
 # range(11)
+
+# Revision: Yes

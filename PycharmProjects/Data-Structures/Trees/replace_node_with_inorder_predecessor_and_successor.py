@@ -12,35 +12,34 @@ def preorderTraversal(root):
         preorderTraversal(root.right)
 
 
-
 def inordertraversal(root, arr):
     if not root:
         return
 
-    inordertraversal(root.left,arr)
+    inordertraversal(root.left, arr)
     arr.append(root.data)
-    inordertraversal(root.right,arr)
+    inordertraversal(root.right, arr)
 
 
-def replaceNodeWithSum(root,arr,i):
+def replaceNodeWithSum(root, arr, i):
     if not root:
         return
     replaceNodeWithSum(root.left, arr, i)
-    root.data = arr[i[0]-1] + arr[i[0]+1]
-    i[0] +=1
-    replaceNodeWithSum(root.right,arr,i)
+    root.data = arr[i[0] - 1] + arr[i[0] + 1]
+    i[0] += 1
+    replaceNodeWithSum(root.right, arr, i)
+
 
 def replaceNodeWithSumUtil(root):
     if not root:
         return
-
     arr = []
     arr.append(0)
 
     inordertraversal(root, arr)
     arr.append(0)
     i = [1]
-    replaceNodeWithSum(root,arr,i)
+    replaceNodeWithSum(root, arr, i)
 
 
 if __name__ == '__main__':
